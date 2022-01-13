@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Table Employe</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form">
+            <div class="input-block">
+                <input class="input" type="text" name="" id="surname" placeholder="Фамилия">
+                <input class="input" type="number" name="" id="year" max="2022" min="1950" placeholder="Год(1950-2022)">
+                <input class="input" type="date" name="" id="recruitment" placeholder="Приём на работу">
+                <input class="input" type="number" name="" id="salary" placeholder="ЗП">
+            </div>
+            <div class="form-btn-block">
+                <button id="sumButton" class="btn" type="submit">Сумма</button>
+                <button id="addButton" class="btn" type="submit">Добавить</button>
+                <button id="deleteButton" class="btn">Уволить</button>
+            </div>
+        </form>
+        <div class="data-block">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Кол-во сотрудников</td>
+                        <td>Сумма</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="countEmpl"></td>
+                        <td id="sumEmpl"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <table id="table" class="table">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Фамилия</td>
+                    <td>Год <img id="sortYear" class="sort" src="img/sort-solid.svg" alt="sort"></td>
+                    <td>Дата приёма на работу <img id="sortDate" class="sort" src="img/sort-solid.svg" alt="sort"></td>
+                    <td>$</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <p>===========================</p>
+    <p>===========================</p>
+
+    <table id="table">
+        <tbody id="tbody"></tbody>
+    </table> -->
+
+    <!-- <script src="js/table.js"></script> -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
